@@ -14,42 +14,85 @@
 
    </head>
    <body>
-      <header class="mx-3 lg:mx-30"> <!-- banner section -->
-         <div
-            class="carousel w-full lg:h-[700px] rounded-xl overflow-hidden my-3 lg:my-10">
-            <div id="slide1" class="carousel-item relative w-full">
-               <img src="./Images/1.png" class="w-full h-full object-cover" />
-               <div
-                  class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
-                  <a href="#slide4" class="btn btn-circle">❮</a>
-                  <a href="#slide2" class="btn btn-circle">❯</a>
+      <header>
+         <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+               <div class="dropdown">
+                  <div tabindex="0" role="button"
+                     class="btn btn-ghost lg:hidden">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                           stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                  </div>
+                  <ul
+                     tabindex="0"
+                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                     <li class="text-red-500"><a>Home</a></li>
+                     <li><a>About</a></li>
+                     <li><a>Pages</a></li>
+                     <li><a>Blog</a></li>
+                     <li><a>Contact</a></li>
+                  </ul>
                </div>
+               <a class="btn btn-ghost text-xl">Hockey<span class="text-red-500">'</span>s</a>
             </div>
+            <div class="navbar-center hidden lg:flex">
+               <ul class="menu menu-horizontal px-1">
+                  <li class="text-red-500"><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+               </ul>
+            </div>
+            <div class="navbar-end">
+               <a class="mr-5 lg:mr-10"><i class="fa-solid fa-magnifying-glass"></i></a>
+               <a class="btn bg-red-600 rounded-lg text-white">Get Ticket</a>
+            </div>
+         </div>
 
-            <div id="slide2" class="carousel-item relative w-full">
-               <img src="./Images/2.png" class="w-full h-full object-cover" />
-               <div
-                  class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
-                  <a href="#slide1" class="btn btn-circle">❮</a>
-                  <a href="#slide3" class="btn btn-circle">❯</a>
+         <!-- banner section -->
+         <div class="mx-3 lg:mx-30">
+            <div
+               class="carousel w-full lg:h-[700px] rounded-xl overflow-hidden my-3 lg:my-10">
+               <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png"
+                     class="w-full h-full object-cover" />
+                  <div
+                     class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
+                     <a href="#slide4" class="btn btn-circle">❮</a>
+                     <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
                </div>
-            </div>
 
-            <div id="slide3" class="carousel-item relative w-full">
-               <img src="./Images/3.png" class="w-full h-full object-cover" />
-               <div
-                  class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
-                  <a href="#slide2" class="btn btn-circle">❮</a>
-                  <a href="#slide4" class="btn btn-circle">❯</a>
+               <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/2.png"
+                     class="w-full h-full object-cover" />
+                  <div
+                     class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
+                     <a href="#slide1" class="btn btn-circle">❮</a>
+                     <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
                </div>
-            </div>
 
-            <div id="slide4" class="carousel-item relative w-full">
-               <img src="Images/4.png" class="w-full h-full object-cover" />
-               <div
-                  class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
-                  <a href="#slide3" class="btn btn-circle">❮</a>
-                  <a href="#slide1" class="btn btn-circle">❯</a>
+               <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./Images/3.png"
+                     class="w-full h-full object-cover" />
+                  <div
+                     class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
+                     <a href="#slide2" class="btn btn-circle">❮</a>
+                     <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+               </div>
+
+               <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/4.png" class="w-full h-full object-cover" />
+                  <div
+                     class="absolute left-5 right-5 gap-2 top-3/4 lg:top-7/8 flex justify-center">
+                     <a href="#slide3" class="btn btn-circle">❮</a>
+                     <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
                </div>
             </div>
          </div>
@@ -442,9 +485,10 @@
          <h1 class="text-2xl font-bold">Get In Touch</h1>
          <p class="text-slate-400">Dit amet consectetur. Condimentum <br>
             adipiscing aliquam turpis placerat dolor. Purus <br>
-            urna in sit nullam proin. 
+            urna in sit nullam proin.
          </p>
-         <p><i class="fa-regular fa-envelope text-red-400"></i> hockeys@support.com</p>
+         <p><i class="fa-regular fa-envelope text-red-400"></i>
+            hockeys@support.com</p>
          <p><i class="fa-solid fa-phone text-red-400"></i> (+62) 123-321-543</p>
       </aside>
       <nav>
@@ -454,7 +498,7 @@
          <a class="link link-hover">Career</a>
          <a class="link link-hover">News & Artcile</a>
          <a class="link link-hover">Legal Notice</a>
-      </nav> 
+      </nav>
       <nav>
          <h6 class="footer-title">Support</h6>
          <a class="link link-hover">Help Center</a>
